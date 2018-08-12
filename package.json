@@ -1,0 +1,30 @@
+{
+  "name": "d3-openlayer-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "daliu",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server  --config webpack_config/webpack.dev.js --progress --colors --hot --inline --open",
+    "build": "rimraf dist && webpack --config webpack_config/webpack.prod.js --progress --profile --bail",
+    "test": ""
+  },
+  "dependencies": {
+    "d3": "4.13.0",
+    "ol": "^5.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  }
+}
